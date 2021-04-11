@@ -3,19 +3,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Navbar from '../components/ui/Navbar';
 import LoginScreen from '../components/login/LoginScreen';
-import Marvel from '../components/marvel/MarvelScreen';
+import DashboardRoutes from './DashboardRoutes';
 
 const AppRouter = () => {
   return (
     <Router>
-      <Navbar />
-
-      <Switch>
-        <Route exact path="/login" component={ LoginScreen } />
-        <Route exact path="/" component={ Marvel } />
-      </Switch>
+      <div>
+        <Switch>
+          <Route exact path="/login" component={ LoginScreen } />
+          <Route path="/" component={ DashboardRoutes } />
+        </Switch>
+      </div>
     </Router>
   );
 };

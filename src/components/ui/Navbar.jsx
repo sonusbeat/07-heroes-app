@@ -8,7 +8,7 @@ const Navbar = () => {
       </Link>
 
       <div className="navbar-collapse mr-auto">
-        <div className="navbar-nav mr-auto">
+        <div className="navbar-nav">
           <NavLink
             activeClassName="active"
             className="nav-item nav-link"
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>{/* navbar-nav */}
       </div>{/* navbar-collapse */}
 
-      <div className="navbar-collapse">
+      <div className="navbar-collapse ml-auto">
         <div className="navbar-nav">
           <NavLink
             activeClassName="active"
