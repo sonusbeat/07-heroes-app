@@ -1,5 +1,16 @@
+import HeroesList from '../heroes/HeroesList';
+
 const MarvelScreen = () => {
-  return ( <h2>Marvel Screen</h2> );
-}
+  return (
+    <section>
+
+      <h2>Marvel Comics</h2>
+      <hr/>
+
+      <HeroesList publisher="Marvel Comics" />
+
+    </section>
+  );
+};
 
 export default MarvelScreen;

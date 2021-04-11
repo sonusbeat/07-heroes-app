@@ -1,5 +1,16 @@
+import HeroesList from '../heroes/HeroesList';
+
 const DcScreen = () => {
-  return ( <h2>Dc Screen</h2> );
-}
+  return (
+    <section>
+
+      <h2>Marvel Comics</h2>
+      <hr/>
+
+      <HeroesList publisher="DC Comics" />
+
+    </section>
+  );
+};
 
 export default DcScreen;
