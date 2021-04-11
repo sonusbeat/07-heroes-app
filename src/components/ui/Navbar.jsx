@@ -1,0 +1,49 @@
+import { Link, NavLink } from "react-router-dom";
+
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+      <Link className="navbar-brand" to="/">
+        Asociaciones
+      </Link>
+
+      <div className="navbar-collapse mr-auto">
+        <div className="navbar-nav mr-auto">
+          <NavLink
+            activeClassName="active"
+            className="nav-item nav-link"
+            exact
+            to="/marvel"
+          >
+            Marvel
+          </NavLink>
+
+          <NavLink
+            activeClassName="active"
+            className="nav-item nav-link"
+            exact
+            to="/dc"
+          >
+            DC
+          </NavLink>
+        </div>{/* navbar-nav */}
+      </div>{/* navbar-collapse */}
+
+      <div className="navbar-collapse">
+        <div className="navbar-nav">
+          <NavLink
+            activeClassName="active"
+            className="nav-item nav-link"
+            exact
+            to="/login"
+          >
+            Logout
+          </NavLink>
+        </div>{/* navbar-nav */}
+      </div>{/* navbar-collapse */}
+
+    </nav>
+  );
+};
+
+export default Navbar;

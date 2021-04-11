@@ -1,7 +1,9 @@
+import AppRouter from './routers/AppRouter';
+
 const HeroesApp = () => {
   return (
     <section>
-      <h1>Heroes App</h1>
+      <AppRouter />
     </section>
   );
 }
