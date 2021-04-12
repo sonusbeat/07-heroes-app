@@ -1,6 +1,6 @@
 {
   "name": "heroes-app",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

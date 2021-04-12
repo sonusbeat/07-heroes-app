@@ -26,6 +26,15 @@ const Navbar = () => {
           >
             DC
           </NavLink>
+
+          <NavLink
+            activeClassName="active"
+            className="nav-item nav-link"
+            exact
+            to="/hero-search"
+          >
+            Search
+          </NavLink>
         </div>{/* navbar-nav */}
       </div>{/* navbar-collapse */}
 
