@@ -25,13 +25,13 @@ const HeroScreen = ({ history }) => {
   };
 
   return (
-    <section>
+    <section className="animate__animated animate__fadeIn">
       <div className="row mt-5">
         <div className="col-4">
           <img
             src={ `../assets/${ heroId }.jpg` }
             alt={ superhero }
-            className="img-thumbnail"
+            className="img-thumbnail animate__animated animate__fadeInLeft"
           />
         </div>{/* col */}
 

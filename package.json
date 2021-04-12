@@ -1,11 +1,12 @@
 {
   "name": "heroes-app",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
