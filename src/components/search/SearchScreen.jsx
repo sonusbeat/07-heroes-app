@@ -1,21 +1,27 @@
+import { useLocation } from 'react-router';
+import queryString from "query-string";
+
 import heroes from '../../data/heroes';
 import HeroCard from '../heroes/HeroCard';
 import useForm from '../../hooks/useForm';
 
-const SearchScreen = () => {
+const SearchScreen = ({ history }) => {
+
+  const location = useLocation();
+  const { q = "" } = queryString.parse(location.search);
 
   // const heroesFiltered = heroes.filter(hero => hero.id === 1);
   const heroesFiltered = heroes;
 
-  const [ formValues, handleInputChange, reset ] = useForm({ searchText: "" });
+  const [ formValues, handleInputChange, reset ] = useForm({ searchText: q });
+
+  const { searchText } = formValues;
 
   const HandleSearch = (event) => {
     event.preventDefault();
-    console.log(searchText);
+    history.push(`?q=${searchText}`);
     reset();
   };
-
-  const { searchText } = formValues;
 
   return (
     <section className="animate__animated animate__fadeIn">
