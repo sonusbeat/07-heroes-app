@@ -82,7 +82,7 @@ const heroes = [
   },
   {
     id: "marvel-spider",
-    superhero: "Spider Man",
+    superhero: "Spiderman",
     publisher: "Marvel Comics",
     alter_ego: "Peter Parker",
     first_appearance: "Amazing Fantasy #15",
@@ -98,7 +98,7 @@ const heroes = [
   },
   {
     id: "marvel-iron",
-    superhero: "Iron Man",
+    superhero: "Ironman",
     publisher: "Marvel Comics",
     alter_ego: "Tony Stark",
     first_appearance: "Tales of Suspense #39",
