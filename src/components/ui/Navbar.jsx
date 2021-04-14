@@ -1,6 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
+import { useContext } from 'react';
+import AuthContext from "../../auth/AuthContext";
 
 const Navbar = () => {
+  const { user: { name } } = useContext(AuthContext);
+
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
@@ -40,6 +44,10 @@ const Navbar = () => {
 
       <div className="navbar-collapse ml-auto">
         <div className="navbar-nav">
+          <span className="nav-item nav-link text-info">
+            { name }
+          </span>
+
           <NavLink
             activeClassName="active"
             className="nav-item nav-link"
