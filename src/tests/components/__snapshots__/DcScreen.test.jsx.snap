@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puebas en el componente <DcScreen /> Debe coincidir con el Snapshot 1`] = `
+<section>
+  <h2>
+    Marvel Comics
+  </h2>
+  <hr />
+  <HeroesList
+    publisher="DC Comics"
+  />
+</section>
+`;

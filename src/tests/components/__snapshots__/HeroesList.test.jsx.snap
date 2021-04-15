@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puebas en el componente <HeroesList /> Debe coincidir con el Snapshot 1`] = `
+<div
+  className="card-columns animate__animated animate__fadeIn"
+>
+  <HeroCard
+    alter_ego="Peter Parker"
+    characters="Peter Parker"
+    first_appearance="Amazing Fantasy #15"
+    id="marvel-spider"
+    key="marvel-spider"
+    publisher="Marvel Comics"
+    superhero="Spiderman"
+  />
+  <HeroCard
+    alter_ego="Steve Rogers"
+    characters="Steve Rogers"
+    first_appearance="Captain America Comics #1"
+    id="marvel-captain"
+    key="marvel-captain"
+    publisher="Marvel Comics"
+    superhero="Captain America"
+  />
+  <HeroCard
+    alter_ego="Tony Stark"
+    characters="Tony Stark"
+    first_appearance="Tales of Suspense #39"
+    id="marvel-iron"
+    key="marvel-iron"
+    publisher="Marvel Comics"
+    superhero="Ironman"
+  />
+  <HeroCard
+    alter_ego="Thor Odinson"
+    characters="Thor Odinson"
+    first_appearance="Journey into Myster #83"
+    id="marvel-thor"
+    key="marvel-thor"
+    publisher="Marvel Comics"
+    superhero="Thor"
+  />
+  <HeroCard
+    alter_ego="Bruce Banner"
+    characters="Bruce Banner"
+    first_appearance="The Incredible Hulk #1"
+    id="marvel-hulk"
+    key="marvel-hulk"
+    publisher="Marvel Comics"
+    superhero="Hulk"
+  />
+  <HeroCard
+    alter_ego="James Howlett"
+    characters="James Howlett"
+    first_appearance="The Incredible Hulk #180"
+    id="marvel-wolverine"
+    key="marvel-wolverine"
+    publisher="Marvel Comics"
+    superhero="Wolverine"
+  />
+  <HeroCard
+    alter_ego="Matthew Michael Murdock"
+    characters="Matthew Michael Murdock"
+    first_appearance="Daredevil #1"
+    id="marvel-daredevil"
+    key="marvel-daredevil"
+    publisher="Marvel Comics"
+    superhero="Daredevil"
+  />
+  <HeroCard
+    alter_ego="Clinton Francis Barton"
+    characters="Clinton Francis Barton"
+    first_appearance="Tales of Suspense #57"
+    id="marvel-hawkeye"
+    key="marvel-hawkeye"
+    publisher="Marvel Comics"
+    superhero="Hawkeye"
+  />
+  <HeroCard
+    alter_ego="Scott Summers"
+    characters="Scott Summers"
+    first_appearance="X-Men #1"
+    id="marvel-cyclops"
+    key="marvel-cyclops"
+    publisher="Marvel Comics"
+    superhero="Cyclops"
+  />
+  <HeroCard
+    alter_ego="Norrin Radd"
+    characters="Norrin Radd"
+    first_appearance="The Fantastic Four #48"
+    id="marvel-silver"
+    key="marvel-silver"
+    publisher="Marvel Comics"
+    superhero="Silver Surfer"
+  />
+</div>
+`;
