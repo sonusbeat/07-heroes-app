@@ -11,7 +11,7 @@ const SearchScreen = ({ history }) => {
   const location = useLocation();
   const { q = "" } = queryString.parse( location.search );
 
-  const [ formValues, handleInputChange, reset ] = useForm({ searchText: q });
+  const [ formValues, handleInputChange ] = useForm({ searchText: q });
 
   const { searchText } = formValues;
 
