@@ -10,6 +10,8 @@ const LoginScreen = ({ history }) => {
     // history.push("/"); // <== Redirecciona a la ruta deseada
     // history.replace("/"); // <== Borra el history
 
+    const lastPath = localStorage.getItem("lastPath") || "/";
+
     const action = {
       type: types.login,
       payload: {
@@ -19,7 +21,7 @@ const LoginScreen = ({ history }) => {
 
     dispatch(action);
 
-    history.replace("/");
+    history.replace( lastPath );
   };
 
   return (
