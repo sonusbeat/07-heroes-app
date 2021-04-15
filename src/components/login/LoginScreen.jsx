@@ -8,6 +8,7 @@ const LoginScreen = ({ history }) => {
 
   const handleLogin = () => {
     // history.push("/"); // <== Redirecciona a la ruta deseada
+    // history.replace("/"); // <== Borra el history
 
     const action = {
       type: types.login,
@@ -18,7 +19,7 @@ const LoginScreen = ({ history }) => {
 
     dispatch(action);
 
-    history.replace("/"); // <== Borra el history
+    history.replace("/");
   };
 
   return (
