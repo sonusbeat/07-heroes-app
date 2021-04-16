@@ -10,6 +10,9 @@ describe("Puebas en <PrivateRoute />", () => {
     }
   };
 
+  // Set Item with LocalStorage
+  Storage.prototype.setItem = jest.fn();
+
   test("Debe de mostrar el componente si está autenticado y guardar el LocaStorage", () => {
     const wrapper = mount(
       <MemoryRouter>
@@ -22,6 +25,7 @@ describe("Puebas en <PrivateRoute />", () => {
     );
 
     expect( wrapper.find("p").exists() ).toBe(true);
+    expect( localStorage.setItem ).toHaveBeenCalledWith("lastPath", "/marvel");
 
   });
 
