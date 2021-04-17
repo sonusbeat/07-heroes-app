@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <LoginScreen /> Deberia de mostrarse correctamente 1`] = `"<section class=\\"container mt-5\\"><h2>Login</h2><hr><button class=\\"btn btn-primary\\">Acceder</button></section>"`;
