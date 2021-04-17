@@ -3,6 +3,9 @@ import { Redirect, useParams } from "react-router";
 import { PropTypes } from 'prop-types';
 import getHeroById from '../selectors/getHeroById';
 
+// import batman from "../../assets/heroes/dc-batman.jpg"; // Recurso Estático
+import { heroesImages } from '../../helpers/heroesImages';
+
 const HeroScreen = ({ history }) => {
 
   const { heroId } = useParams();
@@ -30,7 +33,9 @@ const HeroScreen = ({ history }) => {
       <div className="row mt-5">
         <div className="col-4">
           <img
-            src={ `../assets/${ heroId }.jpg` }
+            // src={ `../assets/heroes/${ heroId }.jpg` } // Desde: public/assets
+            // src={ batman } // Con Import
+            src={ heroesImages(`./${hero.id}.jpg`).default }
             alt={ superhero }
             className="img-thumbnail animate__animated animate__fadeInLeft"
           />
