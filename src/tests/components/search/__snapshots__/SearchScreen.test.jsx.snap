@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <Search /> Debe de mostrar a Batman y el input con el valor del queryString 1`] = `
+<section
+  className="animate__animated animate__fadeIn"
+>
+  <h1>
+    Search Hero
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h2>
+        Search Form
+      </h2>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            autoComplete="off"
+            className="form-control mb-4"
+            name="searchText"
+            onChange={[Function]}
+            placeholder="Find your hero ..."
+            type="text"
+            value="batman"
+          />
+          <button
+            className="btn btn-primary btn-block"
+            onClick={[Function]}
+          >
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h2>
+        Results
+      </h2>
+      <hr />
+      <section
+        className="card md-3"
+        style={
+          Object {
+            "maxWidth": 540,
+          }
+        }
+      >
+        <div
+          className="row no-gutters"
+        >
+          <div
+            className="col-md-4"
+          >
+            <img
+              alt="Batman"
+              className="card-img"
+              src="./assets/dc-batman.jpg"
+            />
+          </div>
+          <div
+            className="col-md-8"
+          >
+            <div
+              className="card-body"
+            >
+              <h3
+                className="card-title"
+              >
+                Batman
+              </h3>
+              <p
+                className="card-text"
+              >
+                Bruce Wayne
+              </p>
+              <p
+                className="card-text"
+              >
+                <small
+                  className="text-muted"
+                >
+                  Detective Comics #27
+                </small>
+              </p>
+              <a
+                href="/hero/dc-batman"
+                onClick={[Function]}
+              >
+                Más ...
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Pruebas en el componente <Search /> Debe de mostrar la alerta que si no encontró el hero 1`] = `
+<section
+  className="animate__animated animate__fadeIn"
+>
+  <h1>
+    Search Hero
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h2>
+        Search Form
+      </h2>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            autoComplete="off"
+            className="form-control mb-4"
+            name="searchText"
+            onChange={[Function]}
+            placeholder="Find your hero ..."
+            type="text"
+            value="batasman"
+          />
+          <button
+            className="btn btn-primary btn-block"
+            onClick={[Function]}
+          >
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h2>
+        Results
+      </h2>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        There is no a hero with the following query: "
+        batasman
+        "
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Pruebas en el componente <Search /> Deberia mostrarse correctamente con valores por defecto 1`] = `
+<section
+  className="animate__animated animate__fadeIn"
+>
+  <h1>
+    Search Hero
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h2>
+        Search Form
+      </h2>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            autoComplete="off"
+            className="form-control mb-4"
+            name="searchText"
+            onChange={[Function]}
+            placeholder="Find your hero ..."
+            type="text"
+            value=""
+          />
+          <button
+            className="btn btn-primary btn-block"
+            onClick={[Function]}
+          >
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h2>
+        Results
+      </h2>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Search a Hero
+      </div>
+    </div>
+  </div>
+</section>
+`;
