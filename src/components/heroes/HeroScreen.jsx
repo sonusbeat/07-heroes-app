@@ -9,9 +9,6 @@ const HeroScreen = ({ history }) => {
 
   const hero = useMemo(() => getHeroById(heroId), [ heroId ]);
 
-  console.log("Hero:", hero);
-  console.log("HeroId:", heroId);
-
   if (!hero) {
     return <Redirect to="/" />
   }
