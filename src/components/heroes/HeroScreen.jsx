@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { Redirect, useParams } from "react-router";
+import { PropTypes } from 'prop-types';
 import getHeroById from '../selectors/getHeroById';
 
 const HeroScreen = ({ history }) => {
@@ -7,6 +8,9 @@ const HeroScreen = ({ history }) => {
   const { heroId } = useParams();
 
   const hero = useMemo(() => getHeroById(heroId), [ heroId ]);
+
+  console.log("Hero:", hero);
+  console.log("HeroId:", heroId);
 
   if (!hero) {
     return <Redirect to="/" />
@@ -61,3 +65,7 @@ const HeroScreen = ({ history }) => {
 }
 
 export default HeroScreen;
+
+HeroScreen.propTypes = {
+  history: PropTypes.object.isRequired
+};
