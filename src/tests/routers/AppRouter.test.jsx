@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
-import AuthContext from '../../../auth/AuthContext';
-import AppRouter from '../../../routers/AppRouter';
+import AuthContext from '../../auth/AuthContext';
+import AppRouter from '../../routers/AppRouter';
 
 describe("Pruebas en <AppRouter />", () => {
 

@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import HeroesList from '../../components/heroes/HeroesList';
+import HeroesList from '../../../components/heroes/HeroesList';
 
 describe("Puebas en el componente <HeroesList />", () => {
   test("Debe coincidir con el Snapshot", () => {

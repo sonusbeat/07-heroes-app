@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router';
-import PrivateRoute from '../../../routers/PrivateRoute';
+import PrivateRoute from '../../routers/PrivateRoute';
 
 describe("Puebas en <PrivateRoute />", () => {
 

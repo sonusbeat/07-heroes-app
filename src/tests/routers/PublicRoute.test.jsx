@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router';
-import PublicRoute from '../../../routers/PublicRoute';
+import PublicRoute from '../../routers/PublicRoute';
 
 describe('Pruebas en <PublicRoute />', () => {
 
@@ -26,7 +26,5 @@ describe('Pruebas en <PublicRoute />', () => {
     expect( p.exists() ).toBe(true);
     expect( p.text().trim() ).toBe("Ready!");
   });
-
-
 
 });

@@ -10,6 +10,7 @@ const Navbar = () => {
   const history = useHistory();
 
   const HandleLogout = () => {
+
     const action = {
       type: types.logout
     };

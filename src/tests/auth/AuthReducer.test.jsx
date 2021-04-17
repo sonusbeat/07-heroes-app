@@ -1,5 +1,5 @@
-import authReducer from "../../../auth/authReducer";
-import types from '../../../types/types';
+import authReducer from '../../auth/authReducer';
+import types from '../../types/types';
 
 // const state = {
 //   name: "Daniel",

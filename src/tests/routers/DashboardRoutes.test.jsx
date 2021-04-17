@@ -1,8 +1,7 @@
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router';
-import AuthContext from '../../../auth/AuthContext';
-import DashboardRoutes from '../../../routers/DashboardRoutes';
-
+import AuthContext from '../../auth/AuthContext';
+import DashboardRoutes from '../../routers/DashboardRoutes';
 
 describe("Pruebas en el componente <DashboardRoutes />", () => {
 
@@ -13,8 +12,6 @@ describe("Pruebas en el componente <DashboardRoutes />", () => {
       name: "Daniel"
     }
   };
-
-  Storage.prototype.setItem = jest.fn();
 
   test('Deberia coincidir con el Snapshot', () => {
     const wrapper = mount(

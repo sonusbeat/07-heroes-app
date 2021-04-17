@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import DcScreen from "../../components/dc/DcScreen";
+import DcScreen from '../../../components/dc/DcScreen';
 
 describe("Puebas en el componente <DcScreen />", () => {
   test("Debe coincidir con el Snapshot", () => {
